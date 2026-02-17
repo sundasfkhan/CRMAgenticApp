@@ -6,10 +6,13 @@ import pandas as pd
 import random
 
 if __name__ == '__main__':
-    # Create sample dataframe with random sales data
+    # Create sample dataframe with CRM Cases data
+    crm_statuses = ['Open', 'In Progress', 'Resolved', 'Closed', 'Pending']
+    crm_counts = [random.randint(10, 100) for _ in range(len(crm_statuses))]
+
     my_dataframe = pd.DataFrame({
-        'Month': ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-        'Sales': [random.randint(5000, 20000) for _ in range(12)]
+        'Status': crm_statuses,
+        'Count': crm_counts
     })
 
     agent = PlotlyVisualizationAgent(model="gpt-4o")
@@ -19,7 +22,7 @@ if __name__ == '__main__':
 
     result = agent.create_chart(
         data=my_dataframe,
-        instruction="Create a bar chart showing sales by month"
+        instruction="Create a pie chart showing CRM Cases Status distribution"
     )
 
     if result["success"]:
