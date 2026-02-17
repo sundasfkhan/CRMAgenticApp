@@ -4,5 +4,8 @@ azure-identity
 langchain>=1.0.0
 langgraph>=1.0.0
 langchain-openai
+langchain-community
 openai
 python-dotenv
+pandas
+plotly
