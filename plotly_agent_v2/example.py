@@ -108,7 +108,7 @@ if __name__ == "__main__":
     # example_agent_class()
     # example_create_agent()
     # example_interactive()
-    # example_quick_chart()
+    example_quick_chart()
 
     print("\nUncomment one of the example functions to run it.")
 
