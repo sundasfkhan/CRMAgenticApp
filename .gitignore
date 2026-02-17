@@ -89,4 +89,4 @@ Thumbs.db
 # Logs
 *.log
 logs/
-
+data/
