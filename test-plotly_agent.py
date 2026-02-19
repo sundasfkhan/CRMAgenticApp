@@ -1,7 +1,7 @@
 from dotenv import load_dotenv
 load_dotenv()  # Load environment variables first
 
-from plotly_agent_v2 import PlotlyVisualizationAgent
+from plotly_agent import PlotlyVisualizationAgent
 import pandas as pd
 import random
 

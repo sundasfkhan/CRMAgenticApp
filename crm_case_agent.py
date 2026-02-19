@@ -8,7 +8,7 @@ from langchain.tools import tool, ToolRuntime
 from langchain.messages import HumanMessage, AIMessage
 
 # Utility imports
-from utility import get_customer_cases, get_customer_name_from_case
+from utility_test import get_customer_cases, get_customer_name_from_case
 
 
 # Define the context schema for dependency injection using dataclass

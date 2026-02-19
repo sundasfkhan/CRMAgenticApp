@@ -39,7 +39,7 @@ def _save_chart(fig, chart_type: str = "chart") -> Optional[str]:
         return None
 
     try:
-        # Get the project root directory (parent of plotly_agent_v2)
+        # Get the project root directory (parent of plotly_agent)
         current_dir = os.path.dirname(os.path.abspath(__file__))
         project_root = os.path.dirname(current_dir)
         data_folder = os.path.join(project_root, "data")

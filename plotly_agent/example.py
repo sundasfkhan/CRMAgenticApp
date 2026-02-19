@@ -14,7 +14,7 @@ load_dotenv()
 # Example 1: Using the high-level PlotlyVisualizationAgent class
 def example_agent_class():
     """Demonstrate using the PlotlyVisualizationAgent class."""
-    from plotly_agent_v2 import PlotlyVisualizationAgent
+    from plotly_agent import PlotlyVisualizationAgent
 
     # Create sample data
     data = pd.DataFrame({
@@ -43,7 +43,7 @@ def example_agent_class():
 # Example 2: Using the create_plotly_agent function directly
 def example_create_agent():
     """Demonstrate using the create_plotly_agent function."""
-    from plotly_agent_v2 import create_plotly_agent
+    from plotly_agent import create_plotly_agent
     from langchain.messages import HumanMessage
     import json
 
@@ -74,7 +74,7 @@ def example_create_agent():
 # Example 3: Interactive chat session
 def example_interactive():
     """Start an interactive session with the visualization agent."""
-    from plotly_agent_v2 import PlotlyVisualizationAgent
+    from plotly_agent import PlotlyVisualizationAgent
 
     agent = PlotlyVisualizationAgent(model="gpt-4o")
     agent.interactive_session()
@@ -83,7 +83,7 @@ def example_interactive():
 # Example 4: Quick chart creation
 def example_quick_chart():
     """Demonstrate the quick_chart convenience function."""
-    from plotly_agent_v2.agent import quick_chart
+    from plotly_agent.agent import quick_chart
 
     data = {
         'Year': [2020, 2021, 2022, 2023, 2024],
