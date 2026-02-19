@@ -6,7 +6,8 @@ import pandas as pd
 import random
 
 if __name__ == '__main__':
-    # Create sample dataframe with CRM Cases data
+
+
     crm_statuses = ['Open', 'In Progress', 'Resolved', 'Closed', 'Pending']
     crm_counts = [random.randint(10, 100) for _ in range(len(crm_statuses))]
 
